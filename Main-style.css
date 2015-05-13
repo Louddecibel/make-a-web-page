@@ -1,0 +1,241 @@
+* {
+	font-family: Helvetica;
+	/*border: solid 3px black;*/
+}
+
+body {
+	background-color: #1E0824;
+}
+
+.header {
+	background-color: #1E0824;
+	background-image: url("background/mars.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	display: flex;
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	align-content: center;
+
+}
+
+
+.header-text {
+	flex: 1 100%;
+	font-weight: Normal;
+	color: white;
+	text-align: center;
+
+
+	/*margin-top: auto;
+	margin-right: auto;
+	text-align: right; */ /*seems like the only way to center in internet explorer OR  IE doesnt recognize
+/* Auto margin*/
+
+}
+
+
+
+
+.profile {
+	border:2px solid white;
+	background-image: url("images/header-photo.jpg");
+	border-radius: 100%;
+	background-size: 100px;
+	background-repeat: no-repeat;
+	background-position: center ;
+	height: 100px;
+	width: 100px;
+	margin-top: 10px;
+	margin-left: 10px;
+	/*margin-top: auto;
+	margin-right: auto;*/
+
+}
+
+
+.content-container {
+	padding-top: 1px;
+
+	display: flex;
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+
+  	flex-flow: row wrap;
+
+
+
+	/*margin-right: 3em;
+	margin-left: 3em; */
+}
+
+.content-container > * {
+	flex: 1 100%;
+}
+
+.content-container h3 {
+	margin-left: 0px;
+	text-align: center;
+	background-color: #EA1B45;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 3px;
+	padding-top:3px ;
+	padding-left: 3px;
+}
+
+.content-lesson1, .content-lesson2, .content-lesson3 {
+
+	background-color: #7E7E7E;
+
+}
+
+.content-lesson1, .content-lesson2 {
+	border:none;
+}
+
+.content-con a {
+	color:white;
+	text-decoration: none;
+
+}
+
+.content-con a:hover {
+	text-decoration: underline;
+	background-color: #EA1B45 ;
+
+}
+
+.content-container h3 a {
+	text-decoration: none;
+	color: white;
+}
+
+.content-container h3 a:hover {
+	text-decoration: underline;	
+}
+
+.content-con {
+	padding-left: 3px;
+	padding-top: 0px;
+	list-style: none;
+	margin-top: 3px;
+
+}
+
+.content-con li {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+
+
+
+
+/*Actual notes Styling below--------------------------- */
+
+
+.lesson-container {
+	border: 20px solid white;
+	margin-top: 40px;
+	background-color: white;
+
+	border-radius: 20px;
+	
+	display: -webkit-box;
+  	display: -moz-box;
+  	display: -ms-flexbox;
+  	display: -webkit-flex;
+  	display: flex;
+
+  	flex-flow: row wrap  ;
+}
+
+/*layout of container when one mobile screen */
+.lesson-container > * {
+	flex: 1 100%;
+}
+
+
+
+
+.lesson-title {
+	background-color: #EA1B45;
+	margin:auto;
+	padding-left: 5px;
+	color: white;
+}
+
+
+.con-title {
+
+	font-weight: normal;
+	color:white;
+	background-color: #7E7E7E;
+
+	margin:auto auto 20px auto;
+	padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom:5px;
+
+}
+
+
+
+.con-desc {
+	padding-left:15px;
+	padding-right:10px;
+
+
+}
+
+.con-desc p  {
+
+	text-align: left;
+
+}
+
+.con-ex {
+
+	margin: 10px auto 10px auto;
+}
+
+.con-ex img {
+	display:block;
+	max-width: 90%;
+	max-height: 90%;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+
+
+
+
+
+
+/* code for a responsive design when on a larger screen*/
+@media all and (min-width: 800px) {
+	body {margin-left: 10%; margin-right: 10%;}
+/*header and table of content code */
+	.header {flex-flow: row; justify-content: flex-start;}
+	.profile{ margin-left: 10px; height: 150px; width: 150px; background-size: 150px;}
+	.header-text{font-size: 50px; max-width: 10%; text-align: left; margin-left: 5px;}
+	.content-lesson1, .content-lesson2, .content-lesson3 {flex:auto;}
+	.content-lesson1, .content-lesson2 {border-right: 2px solid white}
+/*acutal content code */
+	.lesson-container{align-items:center;}
+	.con-ex, .con-desc {flex: 1 30%;}
+	.con-ex img {max-width: 70%; max-height: 70%;  }
+	#text-ex {border-left:2px solid #7E7E7E;margin-top: 10px;margin-bottom: 10px;padding-left:10px;}
+}

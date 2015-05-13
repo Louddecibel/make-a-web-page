@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abood's Notes</title>
+	<link rel="stylesheet" type="text/css" href="Main-style.css">
+</head>
+
+<body>
+	<div  class="header">
+		<div class= "profile"></div>
+		<h2 class= "header-text" >My Notes</h2>
+	</div>
+		<div class="content-container">
+			<div class="content-lesson1">
+				<h3><a href="#lesson1">Lesson 1</a></h3>
+					<ul class="content-con">
+						<li><a href="#less1.1">The Web and Accessing it</a></li>
+						<li><a href="#less1.2">HTML Structure</a></li>
+						<li><a href="#less1.3">Elements</a></li>
+					</ul>
+			</div>
+			<div class="content-lesson2">
+				<h3><a href="#lesson2">Lesson 2</a></h3>
+					<ul class="content-con">
+						<li><a href="#less2.1">HTML and CSS</a></li>
+						<li><a href="#less2.2">Language and Understanding Mark-up</a></li>
+						<li><a href="#less2.3">Layout, Strcture, and Boxifying</a></li>
+					</ul>
+			</div>
+			<div class="content-lesson3">
+				<h3><a href="#lesson3">Lesson 3</a></h3>
+					<ul class="content-con">
+						<li><a href="#less3.1">What is CSS?</a></li>
+						<li><a href="#less3.2">The reason for using CSS</a></li>
+						<li><a href="#less3.3">Using CSS</a></li>
+						<li><a href="#less3.4">ID vs CLASS</a></li>
+						<li><a href="#less3.5">The Box Model</a></li>
+						<li><a href="#less3.6">Flex and "Responsive" Design</a></li>
+					</ul>
+			</div>
+		</div>
+
+<!--Actual notes start here-->
+
+<div class= "lesson-container">
+
+	<h3 id="lesson1" class="lesson-title">Lesson 1</h3>
+		<h2 id="less1.1" class="con-title">The Web and Accessing it</h2>
+			<div class="con-desc">
+		        <p>
+			        A lot of things are happening in the background when you do something as simple as accessing a
+			        <b>Web Page</b>.
+			        When you go to your favourite website using your browser, it uses a language called <b>HTML</b>
+			        ,which stands for <em>Hyper Text Mark Up Language</em>, that tells your browser how to display contant and what happens
+			        when the user interacts with it.<br>
+			        When you type an address into your browser, your computer is essentially fetching files from a server half way across the world
+			        for your viewing pleasure. But how does it do this? Using <b>HTTP</b>, <em>Hypertext Tranfer Protocal</em>, a protocal used to communicate with servers.
+		        </p>
+			</div>
+
+			<div class="con-ex">
+				<img src="images/website.jpg" alt="accessing the internet diagram">
+			</div>
+
+		<h2 id="less1.2" class="con-title">HTML Structure</h2>
+			<div class="con-desc">
+
+				<p>
+			        I like to think of <b>HTML</b> like the Human body; It has an element on top that defines what type it is (<em>DOCTYPE</em>),
+			        a <b>head</b> with a name and a brain that contains <em>Metadata</em> defining how it should communicate with you (<em>Title, CSS, JS</em>),
+			        and <b>body</b> that has all the contant you want to consume (<em>Images, videos, text</em>). It looks a little like this:<br>
+			        </p>
+			        <p>
+			        DOCTYPE--->defines it as HTML<br>Head--->Contains the name of the page and other Data linking to CSS and JS<br>
+			        Body--->That contant you are here for!
+		        </p>
+
+			</div>
+
+		<h2 id="less1.3" class="con-title">Elements</h2>
+			<div class="con-desc">
+
+				<p>
+			        Elements contains <b>Tags</b> that tell your browser how it should display contant. These are used to display links, images, and format contant to look a certain way.
+			        So far, we know that there are two type of elements in <b>HTML</b>; <em>inline</em> and <em>block</em> elements.<br>
+			        Inline elements will display contant on the same line. However, block elements will create an invisable box around contant giving it a block of its own (just like how this page is
+			        <em>divided</em> into seperate section using the <b>DIV</b> block element).
+			    </p>
+
+
+
+			</div>
+			<div id="text-ex" class="con-ex">
+				<h6>Inline elements example:</h6>
+					<p>
+						One of my favourite hobbies is playing <em>music</em>. My favourite instrument is the <a href="en.wikipedia.org/wiki/Guitar">Guitar</a>, specifically,
+						my telecaster that looks kinda like
+						<a href="http://www.dv247.com/assets/products/205815_t.jpg">this</a>
+						Pretty sexy, huh? if you want to buy the exact model I have, you can go
+						<a href="http://www.musiciansfriend.com/guitars/fender-jim-root-artist-series-telecaster-electric-guitar">here!</a>
+					</p>
+			</div>
+</div>
+
+<div class="lesson-container">
+
+	<h3 id="lesson2" class="lesson-title">Lesson 2</h3>
+		<h2 id="less2.1" class="con-title">What is HTML and CSS?</h2>
+			<div class="con-desc">
+				<p>
+		            <b>HTML</b>: is the structure every website is built on.<br>
+		            <b>CSS</b>: determines the way a website will look visualy...kinda like a stylist.
+	          	</p>
+			</div>
+
+			<div class="con-ex">
+				<!--image of HTML and CSS logo here-->
+				<img src="images/html-css-logo.jpg" alt="HTML and CSS logo">
+			</div>
+
+		<h2 id="less2.2" class="con-title">Language, syntax, and DOM</h2>
+			<div class="con-desc">
+
+				<p>
+					To really understand how a website works, you need to know that HTML is uses a <em>branching structure</em> called <b>DOM</b>(Document object model). When you write HTML code, with its own set of syntax and rule that usually consist of tags, you're telling your browser how to display things. And through DOM, it identifies the syntax and rules in the code in order to correctly display your webpage. Additionally, CSS has its own language, syntax and rules that determines visual and style changes to your website.
+	          	</p>
+			</div>
+
+			<div class="con-ex">
+				<img src="images/tree.gif" alt="example of DOM branching rules">
+			</div>
+
+		<h2 id="less2.3" class="con-title">Boxifying</h2>
+			<div class="con-desc">
+				<p>
+					A website is made of boxes that has all the images, text, headers, footers, you name it! When you come to terms with that, it becomes easier to layout your webpage, think about the elements you want to put in it, and begin designing and building your own webpage.
+          		</p>
+			</div>
+
+			<div class="con-ex">
+				<img src="images/boxify.jpg" alt="example of a website boxifyed">
+			</div>
+</div>
+
+<div class="lesson-container">
+
+	<h3 id="lesson3" class="lesson-title">Lesson 3</h3>
+		<h2 id="less3.1" class="con-title">Define CSS</h2>
+			<div class="con-desc">
+				<p>
+		           Cascading Style Sheet (CSS) defines the way a website will appear visually. It is a separate document that is linked to the HTML document of the website that not only changes the color and style of your elements, but can also define the layout.
+
+	          	</p>
+			</div>
+
+			<div class="con-ex">
+				<img src="images/css-example.png" alt="example of a website with CSS and without CSS">
+			</div>
+
+		<h2 id="less3.2" class="con-title">Why CSS?</h2>
+			<div class="con-desc">
+				<p>
+		            There is a couple of advantages for using CSS:<br><br>
+					<strong>Stops repeatition:</strong> Instead of coding multiple elements in your HTML documents with the same styling, you can set a class for all of elements that you know will have the same styling and set the rules for them in CSS to avoid repetition.<br><br>
+					<strong>Less mistakes and easier to review:</strong> Coding multiple elements in your HTML document with the same styling will inevitably result in some error. Using a single class definition in your CSS document to set rules for several elements in HTML will have a smaller margin of error. Better yet, if something is visually wrong in your website, it easier to pinpoint the culprit using CSS.
+	          	</p>
+			</div>
+
+
+
+		<h2 id="less3.3" class="con-title">Using CSS</h2>
+			<div class="con-desc">
+				<p>
+		            There are three main methods for applying styling to your HTML document. 
+		        </p>
+		            <ol>
+		            	<li>It can be done within the HTML documents head by placing CSS rules within style tags</li>
+		            	<li>they can be added inline within each tag</li> 
+		            	<li>or in a separate CSS file linked to the HTML document</li>
+		            </ol>
+		        <p>
+		            CSS follow the “inheritance” rule where the most specific rule is applied. This means that child elements within an element with a defined CSS rule will inherit the values of its ancestor. However, not all rules are inherited and the child element can override these values by setting and defining CSS rules for it.
+	          	</p>
+			</div>
+
+
+
+		<h2 id="less3.4" class="con-title">ID vs Class</h2>
+			<div class="con-desc">
+				<p>
+		            <em>Class</em> is used to style several container elements that are related it someway (headers, titles, footers), while <em>ID’s</em> are used to style a unique element within your HTML document.
+	          	</p>
+			</div>
+
+
+
+		<h2 id="less3.5" class="con-title">The Box Model</h2>
+			<div class="con-desc">
+				<p>
+		            It easier to understand the layout of your website and its elements once you look at the “Box Model.” Each element in your HTML document has a value (usually the content), padding, a border, and a margin.  Change these values cause change to the space, or the box, your element occupies but not to the layout of the page.
+	          	</p>
+			</div>
+
+			<div class="con-ex">
+				<img src="images/box-model.gif" alt="picture of box model">
+			</div>
+
+		<h2 id="less3.6" class="con-title">Flex and Responsive Design</h2>
+			<div class="con-desc">
+				<p>
+		            Using flex, you’re able to effectively mold the layout of the elements in your page and it becomes easier to implement a design that is given to you or that you have come up with. For instance, using flex I was able to layout this page just the way I imagined and even made it responsive. Now, the page will “flex” and move around elements so that it can fit on smaller displays.
+		            Give it a whirl! Change the size of the browser and watch the header, table of contents, and lessons change layout.
+	          	</p>
+			</div>
+
+</div>
+
+</body>
+</html>
